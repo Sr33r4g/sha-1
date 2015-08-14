@@ -9,10 +9,13 @@ int main(int argc, char **argv)
     /*string input;
 	cout <<"Enter the string: ";
     cin >> input;*/
-	string s = "A man needs a name ,so does a girl";
-    string zz = e.toInt(s,s.size());
-    cout << zz;
-    
+	string input = "A Test";
+    string zz = e.toInt(input,input.size());
+   // cout << zz <<"\n\n\n";
+    string zzz = e.appendZeroes(zz,input.size()*8);
+   // cout << zzz.size();
+   // cout <<"\n\n\nChuncking starts here";
+    e.chunkToWords(zzz);
     cin.get();
 	return 0;
 }
