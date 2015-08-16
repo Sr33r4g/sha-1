@@ -15,7 +15,11 @@ int main(int argc, char **argv)
     string zzz = e.appendZeroes(zz,input.size()*8);
    // cout << zzz.size();
    // cout <<"\n\n\nChuncking starts here";
-    e.chunkToWords(zzz);
+   
+    string *k;
+    k = e.chunkToWords(zzz);
+    
+    e.extend(k);
     cin.get();
 	return 0;
 }

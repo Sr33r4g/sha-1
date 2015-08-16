@@ -7,6 +7,7 @@
 class eightbitBinary
 {
 public:
+    std::string m[500];
     std::string h0 = "01100111010001010010001100000001";
     std::string h1 = "11101111110011011010101110001001";
     std::string h2 = "10011000101110101101110011111110";
@@ -17,8 +18,11 @@ public:
     std::string toInt(std::string c, int z);    //this works
     std::string toBinary(int k);  //this works too
     std::string appendZeroes(std::string s,int inputsize);  //this works too
-    void chunkToWords(std::string s);   //this works too  THIS IS STEP 8 
+    std::string * chunkToWords(std::string s);   //this works too  THIS IS STEP 8  AND THIS SHOULD RETURN A STRING@!!!!
+    void extend(std::string *s);    //this works too.... step 9 complete
     
+    
+    //void checker(std::string l);
     
 };
 
