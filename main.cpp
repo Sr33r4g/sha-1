@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<iostream>
+#include <iostream>
 #include "eightbitBinary.h"
 using namespace std;
 
@@ -19,7 +19,14 @@ int main(int argc, char **argv)
     string *k;
     k = e.chunkToWords(zzz);
     
-    e.extend(k);
+    k =  e.extend(k);
+    
+    e.f1(k);
+    e.f2(k);
+    e.f3(k);
+    e.f4(k);
+    
+    
     cin.get();
 	return 0;
 }
